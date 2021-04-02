@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9DC93E2325B21835004990FD /* ModulesRepositoryRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC93E2225B21835004990FD /* ModulesRepositoryRoutable.swift */; };
-		9DC93E2725B21852004990FD /* NoRouterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC93E2525B21852004990FD /* NoRouterPresenter.swift */; };
-		9DC93E2825B21852004990FD /* NoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC93E2625B21852004990FD /* NoRouter.swift */; };
-		9DC93E3125B21872004990FD /* Router+SegueSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC93E2B25B21872004990FD /* Router+SegueSender.swift */; };
-		9DC93E3225B21872004990FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC93E2C25B21872004990FD /* ViewController.swift */; };
-		9DC93E3325B21872004990FD /* TableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC93E2D25B21872004990FD /* TableViewHeaderFooterView.swift */; };
-		9DC93E3425B21872004990FD /* SegueSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC93E2E25B21872004990FD /* SegueSender.swift */; };
-		9DC93E3525B21872004990FD /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC93E2F25B21872004990FD /* TableViewCell.swift */; };
+		9D12638426052DCD00B505FE /* CardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12638326052DCD00B505FE /* CardListViewController.swift */; };
+		9DC7C2AC260A9BCB00E05B31 /* CardListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC7C2AB260A9BCB00E05B31 /* CardListConfigurator.swift */; };
+		9DC7C2AF260A9BEE00E05B31 /* CardListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC7C2AE260A9BEE00E05B31 /* CardListViewModel.swift */; };
+		9DC7C2B4260A9C5500E05B31 /* CardListRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC7C2B3260A9C5500E05B31 /* CardListRoutes.swift */; };
+		9DC7C2B8260A9C7100E05B31 /* CardListDefaultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC7C2B7260A9C7100E05B31 /* CardListDefaultPresenter.swift */; };
+		9DC7C2BF260AA14200E05B31 /* CardListRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC7C2BE260AA14200E05B31 /* CardListRoute.swift */; };
+		9DC93E2325B21835004990FD /* ModulesRepositoryContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC93E2225B21835004990FD /* ModulesRepositoryContext.swift */; };
 		9DC93E4825B218E4004990FD /* UITableView+NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC93E3C25B218E4004990FD /* UITableView+NibLoadableView.swift */; };
 		9DC93E4925B218E4004990FD /* UITableView+CellDynamicHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC93E3D25B218E4004990FD /* UITableView+CellDynamicHeight.swift */; };
 		9DC93E4A25B218E4004990FD /* ReusableView+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC93E3E25B218E4004990FD /* ReusableView+UIView.swift */; };
@@ -25,12 +24,15 @@
 		9DC93E4F25B218E4004990FD /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC93E4325B218E4004990FD /* ReusableView.swift */; };
 		9DC93E5025B218E4004990FD /* AlertRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC93E4525B218E4004990FD /* AlertRoute.swift */; };
 		9DC93E5125B218E4004990FD /* AlertRoute+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC93E4725B218E4004990FD /* AlertRoute+UIViewController.swift */; };
+		9DD58D38260E56990085FA3B /* CardListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD58D37260E56990085FA3B /* CardListItemViewModel.swift */; };
+		9DD58D3C260E59120085FA3B /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD58D3B260E59120085FA3B /* Cancellable.swift */; };
+		9DD58D3F260E80CB0085FA3B /* CardListViewModel+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD58D3E260E80CB0085FA3B /* CardListViewModel+Combine.swift */; };
+		9DD58D42260E846A0085FA3B /* PresentableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD58D41260E846A0085FA3B /* PresentableViewController.swift */; };
 		9DEA0006259282860037F34D /* ModulesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEA0005259282860037F34D /* ModulesRepository.swift */; };
 		9DEA000A259282C80037F34D /* RepositoryModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEA0009259282C80037F34D /* RepositoryModule.swift */; };
 		9DEA000E259283480037F34D /* DefaultRepositoryModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEA000D259283480037F34D /* DefaultRepositoryModule.swift */; };
 		9DEA001C25928D4F0037F34D /* LoadingScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DEA001B25928D4F0037F34D /* LoadingScreen.storyboard */; };
 		9DEA001F25928D640037F34D /* LoadingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEA001E25928D640037F34D /* LoadingScreenViewController.swift */; };
-		9DEA002225928F7B0037F34D /* RootModuleRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEA002125928F7B0037F34D /* RootModuleRoutable.swift */; };
 		9DEA0027259292030037F34D /* LoadingScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEA0026259292030037F34D /* LoadingScreenRouter.swift */; };
 		9DEA002E259292B80037F34D /* LoadingScreenMainRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEA002D259292B80037F34D /* LoadingScreenMainRoute.swift */; };
 		9DEA0033259293F50037F34D /* LoadingScreenMainRoute+RootModuleRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEA0032259293F50037F34D /* LoadingScreenMainRoute+RootModuleRoutable.swift */; };
@@ -38,28 +40,24 @@
 		9DEAFF8D25923CED0037F34D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DEAFF8C25923CED0037F34D /* Assets.xcassets */; };
 		9DEAFF9025923CED0037F34D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DEAFF8E25923CED0037F34D /* LaunchScreen.storyboard */; };
 		9DEAFF9B25923D540037F34D /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAFF9A25923D540037F34D /* Presenter.swift */; };
-		9DEAFFCA259240000037F34D /* PresenterCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAFFC9259240000037F34D /* PresenterCompatible.swift */; };
 		9DEAFFD325924FC30037F34D /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAFFD225924FC30037F34D /* BasePresenter.swift */; };
 		9DEAFFD7259255DF0037F34D /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAFFD6259255DF0037F34D /* Presentable.swift */; };
-		9DEAFFDA259258D30037F34D /* PresenterConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAFFD9259258D30037F34D /* PresenterConfiguration.swift */; };
-		9DEAFFE125925C210037F34D /* PresenterConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAFFE025925C210037F34D /* PresenterConfigurator.swift */; };
-		9DEAFFEC259276740037F34D /* UIView+Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAFFEB259276740037F34D /* UIView+Presentable.swift */; };
 		9DEAFFF12592777B0037F34D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAFFF02592777B0037F34D /* Router.swift */; };
-		9DEAFFF425927F8C0037F34D /* UIKitRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAFFF325927F8C0037F34D /* UIKitRouter.swift */; };
+		9DEAFFF425927F8C0037F34D /* BaseUIKitRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAFFF325927F8C0037F34D /* BaseUIKitRouter.swift */; };
 		9DEAFFF82592802D0037F34D /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAFFF72592802D0037F34D /* Module.swift */; };
 		9DEAFFFC2592803B0037F34D /* UIModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAFFFB2592803B0037F34D /* UIModule.swift */; };
-		9DEAFFFF259280490037F34D /* RootModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAFFFE259280490037F34D /* RootModule.swift */; };
+		9DEAFFFF259280490037F34D /* RootUIModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAFFFE259280490037F34D /* RootUIModule.swift */; };
+		9DFBD34326126A4100129E23 /* RootModuleContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFBD34226126A4100129E23 /* RootModuleContext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9DC93E2225B21835004990FD /* ModulesRepositoryRoutable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModulesRepositoryRoutable.swift; sourceTree = "<group>"; };
-		9DC93E2525B21852004990FD /* NoRouterPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoRouterPresenter.swift; sourceTree = "<group>"; };
-		9DC93E2625B21852004990FD /* NoRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoRouter.swift; sourceTree = "<group>"; };
-		9DC93E2B25B21872004990FD /* Router+SegueSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Router+SegueSender.swift"; sourceTree = "<group>"; };
-		9DC93E2C25B21872004990FD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9DC93E2D25B21872004990FD /* TableViewHeaderFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewHeaderFooterView.swift; sourceTree = "<group>"; };
-		9DC93E2E25B21872004990FD /* SegueSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueSender.swift; sourceTree = "<group>"; };
-		9DC93E2F25B21872004990FD /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		9D12638326052DCD00B505FE /* CardListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListViewController.swift; sourceTree = "<group>"; };
+		9DC7C2AB260A9BCB00E05B31 /* CardListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListConfigurator.swift; sourceTree = "<group>"; };
+		9DC7C2AE260A9BEE00E05B31 /* CardListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListViewModel.swift; sourceTree = "<group>"; };
+		9DC7C2B3260A9C5500E05B31 /* CardListRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListRoutes.swift; sourceTree = "<group>"; };
+		9DC7C2B7260A9C7100E05B31 /* CardListDefaultPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListDefaultPresenter.swift; sourceTree = "<group>"; };
+		9DC7C2BE260AA14200E05B31 /* CardListRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListRoute.swift; sourceTree = "<group>"; };
+		9DC93E2225B21835004990FD /* ModulesRepositoryContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModulesRepositoryContext.swift; sourceTree = "<group>"; };
 		9DC93E3C25B218E4004990FD /* UITableView+NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+NibLoadableView.swift"; sourceTree = "<group>"; };
 		9DC93E3D25B218E4004990FD /* UITableView+CellDynamicHeight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+CellDynamicHeight.swift"; sourceTree = "<group>"; };
 		9DC93E3E25B218E4004990FD /* ReusableView+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReusableView+UIView.swift"; sourceTree = "<group>"; };
@@ -70,12 +68,15 @@
 		9DC93E4325B218E4004990FD /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		9DC93E4525B218E4004990FD /* AlertRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertRoute.swift; sourceTree = "<group>"; };
 		9DC93E4725B218E4004990FD /* AlertRoute+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AlertRoute+UIViewController.swift"; sourceTree = "<group>"; };
+		9DD58D37260E56990085FA3B /* CardListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListItemViewModel.swift; sourceTree = "<group>"; };
+		9DD58D3B260E59120085FA3B /* Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
+		9DD58D3E260E80CB0085FA3B /* CardListViewModel+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardListViewModel+Combine.swift"; sourceTree = "<group>"; };
+		9DD58D41260E846A0085FA3B /* PresentableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentableViewController.swift; sourceTree = "<group>"; };
 		9DEA0005259282860037F34D /* ModulesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulesRepository.swift; sourceTree = "<group>"; };
 		9DEA0009259282C80037F34D /* RepositoryModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryModule.swift; sourceTree = "<group>"; };
 		9DEA000D259283480037F34D /* DefaultRepositoryModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRepositoryModule.swift; sourceTree = "<group>"; };
 		9DEA001B25928D4F0037F34D /* LoadingScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoadingScreen.storyboard; sourceTree = "<group>"; };
 		9DEA001E25928D640037F34D /* LoadingScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreenViewController.swift; sourceTree = "<group>"; };
-		9DEA002125928F7B0037F34D /* RootModuleRoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootModuleRoutable.swift; sourceTree = "<group>"; };
 		9DEA0026259292030037F34D /* LoadingScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreenRouter.swift; sourceTree = "<group>"; };
 		9DEA002D259292B80037F34D /* LoadingScreenMainRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreenMainRoute.swift; sourceTree = "<group>"; };
 		9DEA0032259293F50037F34D /* LoadingScreenMainRoute+RootModuleRoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoadingScreenMainRoute+RootModuleRoutable.swift"; sourceTree = "<group>"; };
@@ -85,17 +86,14 @@
 		9DEAFF8F25923CED0037F34D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DEAFF9125923CED0037F34D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		9DEAFF9A25923D540037F34D /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
-		9DEAFFC9259240000037F34D /* PresenterCompatible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterCompatible.swift; sourceTree = "<group>"; };
 		9DEAFFD225924FC30037F34D /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
 		9DEAFFD6259255DF0037F34D /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
-		9DEAFFD9259258D30037F34D /* PresenterConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterConfiguration.swift; sourceTree = "<group>"; };
-		9DEAFFE025925C210037F34D /* PresenterConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterConfigurator.swift; sourceTree = "<group>"; };
-		9DEAFFEB259276740037F34D /* UIView+Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Presentable.swift"; sourceTree = "<group>"; };
 		9DEAFFF02592777B0037F34D /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		9DEAFFF325927F8C0037F34D /* UIKitRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitRouter.swift; sourceTree = "<group>"; };
+		9DEAFFF325927F8C0037F34D /* BaseUIKitRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIKitRouter.swift; sourceTree = "<group>"; };
 		9DEAFFF72592802D0037F34D /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
 		9DEAFFFB2592803B0037F34D /* UIModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIModule.swift; sourceTree = "<group>"; };
-		9DEAFFFE259280490037F34D /* RootModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootModule.swift; sourceTree = "<group>"; };
+		9DEAFFFE259280490037F34D /* RootUIModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootUIModule.swift; sourceTree = "<group>"; };
+		9DFBD34226126A4100129E23 /* RootModuleContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootModuleContext.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +107,84 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D12638026052D8E00B505FE /* CardList */ = {
+			isa = PBXGroup;
+			children = (
+				9DC7C2A9260A9B4000E05B31 /* Module */,
+				9DC7C2BC260A9CD100E05B31 /* Interactors */,
+				9DC7C2B2260A9C3E00E05B31 /* Routers */,
+				9DC7C2AA260A9B4B00E05B31 /* Presenters */,
+				9DC7C2A8260A9B3800E05B31 /* Configurators */,
+				9D12638126052DB000B505FE /* Views */,
+			);
+			path = CardList;
+			sourceTree = "<group>";
+		};
+		9D12638126052DB000B505FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9DD58D36260E56800085FA3B /* CardList Item */,
+				9DC7C2B1260A9C0000E05B31 /* CardList View Controller */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9DC7C2A8260A9B3800E05B31 /* Configurators */ = {
+			isa = PBXGroup;
+			children = (
+				9DC7C2AB260A9BCB00E05B31 /* CardListConfigurator.swift */,
+			);
+			path = Configurators;
+			sourceTree = "<group>";
+		};
+		9DC7C2A9260A9B4000E05B31 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		9DC7C2AA260A9B4B00E05B31 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				9DFBD33E261265AD00129E23 /* CardList Presenter */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		9DC7C2B1260A9C0000E05B31 /* CardList View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9D12638326052DCD00B505FE /* CardListViewController.swift */,
+				9DD58D3E260E80CB0085FA3B /* CardListViewModel+Combine.swift */,
+			);
+			path = "CardList View Controller";
+			sourceTree = "<group>";
+		};
+		9DC7C2B2260A9C3E00E05B31 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				9DC7C2C1260AA16300E05B31 /* Details */,
+				9DC7C2B3260A9C5500E05B31 /* CardListRoutes.swift */,
+				9DC7C2BE260AA14200E05B31 /* CardListRoute.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		9DC7C2BC260A9CD100E05B31 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		9DC7C2C1260AA16300E05B31 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
 		9DC93E3925B218E4004990FD /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,13 +230,31 @@
 			isa = PBXGroup;
 			children = (
 				9DC93E4725B218E4004990FD /* AlertRoute+UIViewController.swift */,
+				9DD58D41260E846A0085FA3B /* PresentableViewController.swift */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		9DD2B7AB26094D67004F7622 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				9DEAFFD225924FC30037F34D /* BasePresenter.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		9DD58D36260E56800085FA3B /* CardList Item */ = {
+			isa = PBXGroup;
+			children = (
+				9DD58D37260E56990085FA3B /* CardListItemViewModel.swift */,
+			);
+			path = "CardList Item";
 			sourceTree = "<group>";
 		};
 		9DEA00012592820F0037F34D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				9D12638026052D8E00B505FE /* CardList */,
 				9DEA0004259282690037F34D /* Repository */,
 			);
 			path = Modules;
@@ -172,7 +266,7 @@
 				9DEA000C259282F50037F34D /* Impl */,
 				9DEA0005259282860037F34D /* ModulesRepository.swift */,
 				9DEA0009259282C80037F34D /* RepositoryModule.swift */,
-				9DC93E2225B21835004990FD /* ModulesRepositoryRoutable.swift */,
+				9DC93E2225B21835004990FD /* ModulesRepositoryContext.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -272,16 +366,12 @@
 		9DEAFF9925923D340037F34D /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				9DD2B7AB26094D67004F7622 /* Details */,
 				9DEAFFE4259275E70037F34D /* UIKit */,
 				9DEAFFD6259255DF0037F34D /* Presentable.swift */,
 				9DEAFF9A25923D540037F34D /* Presenter.swift */,
-				9DEAFFD225924FC30037F34D /* BasePresenter.swift */,
-				9DEAFFD9259258D30037F34D /* PresenterConfiguration.swift */,
-				9DEAFFE025925C210037F34D /* PresenterConfigurator.swift */,
-				9DEAFFC9259240000037F34D /* PresenterCompatible.swift */,
 				9DEAFFF02592777B0037F34D /* Router.swift */,
-				9DC93E2625B21852004990FD /* NoRouter.swift */,
-				9DC93E2525B21852004990FD /* NoRouterPresenter.swift */,
+				9DD58D3B260E59120085FA3B /* Cancellable.swift */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -289,13 +379,7 @@
 		9DEAFFE4259275E70037F34D /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				9DC93E2B25B21872004990FD /* Router+SegueSender.swift */,
-				9DC93E2E25B21872004990FD /* SegueSender.swift */,
-				9DC93E2F25B21872004990FD /* TableViewCell.swift */,
-				9DC93E2D25B21872004990FD /* TableViewHeaderFooterView.swift */,
-				9DC93E2C25B21872004990FD /* ViewController.swift */,
-				9DEAFFEB259276740037F34D /* UIView+Presentable.swift */,
-				9DEAFFF325927F8C0037F34D /* UIKitRouter.swift */,
+				9DEAFFF325927F8C0037F34D /* BaseUIKitRouter.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -305,10 +389,27 @@
 			children = (
 				9DEAFFF72592802D0037F34D /* Module.swift */,
 				9DEAFFFB2592803B0037F34D /* UIModule.swift */,
-				9DEAFFFE259280490037F34D /* RootModule.swift */,
-				9DEA002125928F7B0037F34D /* RootModuleRoutable.swift */,
+				9DEAFFFE259280490037F34D /* RootUIModule.swift */,
+				9DFBD34226126A4100129E23 /* RootModuleContext.swift */,
 			);
 			path = Module;
+			sourceTree = "<group>";
+		};
+		9DFBD33E261265AD00129E23 /* CardList Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9DFBD33F261265B600129E23 /* Details */,
+				9DC7C2AE260A9BEE00E05B31 /* CardListViewModel.swift */,
+			);
+			path = "CardList Presenter";
+			sourceTree = "<group>";
+		};
+		9DFBD33F261265B600129E23 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				9DC7C2B7260A9C7100E05B31 /* CardListDefaultPresenter.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,41 +483,40 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DC93E4825B218E4004990FD /* UITableView+NibLoadableView.swift in Sources */,
-				9DC93E2725B21852004990FD /* NoRouterPresenter.swift in Sources */,
 				9DEAFFFC2592803B0037F34D /* UIModule.swift in Sources */,
-				9DC93E3425B21872004990FD /* SegueSender.swift in Sources */,
-				9DEAFFEC259276740037F34D /* UIView+Presentable.swift in Sources */,
-				9DEAFFDA259258D30037F34D /* PresenterConfiguration.swift in Sources */,
+				9D12638426052DCD00B505FE /* CardListViewController.swift in Sources */,
 				9DC93E4A25B218E4004990FD /* ReusableView+UIView.swift in Sources */,
 				9DC93E4F25B218E4004990FD /* ReusableView.swift in Sources */,
-				9DC93E3325B21872004990FD /* TableViewHeaderFooterView.swift in Sources */,
+				9DC7C2BF260AA14200E05B31 /* CardListRoute.swift in Sources */,
 				9DC93E4D25B218E4004990FD /* NibLoadableView+UIView.swift in Sources */,
 				9DEA000E259283480037F34D /* DefaultRepositoryModule.swift in Sources */,
-				9DEAFFFF259280490037F34D /* RootModule.swift in Sources */,
+				9DD58D3F260E80CB0085FA3B /* CardListViewModel+Combine.swift in Sources */,
+				9DC7C2B4260A9C5500E05B31 /* CardListRoutes.swift in Sources */,
+				9DEAFFFF259280490037F34D /* RootUIModule.swift in Sources */,
+				9DD58D3C260E59120085FA3B /* Cancellable.swift in Sources */,
 				9DEA0027259292030037F34D /* LoadingScreenRouter.swift in Sources */,
 				9DC93E4E25B218E4004990FD /* NibLoadableView.swift in Sources */,
 				9DEA001F25928D640037F34D /* LoadingScreenViewController.swift in Sources */,
+				9DD58D42260E846A0085FA3B /* PresentableViewController.swift in Sources */,
 				9DEAFFF12592777B0037F34D /* Router.swift in Sources */,
 				9DEAFFD325924FC30037F34D /* BasePresenter.swift in Sources */,
 				9DEAFF8425923CEB0037F34D /* AppDelegate.swift in Sources */,
 				9DEA000A259282C80037F34D /* RepositoryModule.swift in Sources */,
-				9DC93E2825B21852004990FD /* NoRouter.swift in Sources */,
-				9DC93E3525B21872004990FD /* TableViewCell.swift in Sources */,
+				9DC7C2B8260A9C7100E05B31 /* CardListDefaultPresenter.swift in Sources */,
 				9DEAFF9B25923D540037F34D /* Presenter.swift in Sources */,
+				9DC7C2AC260A9BCB00E05B31 /* CardListConfigurator.swift in Sources */,
 				9DEA0006259282860037F34D /* ModulesRepository.swift in Sources */,
+				9DC7C2AF260A9BEE00E05B31 /* CardListViewModel.swift in Sources */,
+				9DD58D38260E56990085FA3B /* CardListItemViewModel.swift in Sources */,
 				9DEA0033259293F50037F34D /* LoadingScreenMainRoute+RootModuleRoutable.swift in Sources */,
-				9DEAFFCA259240000037F34D /* PresenterCompatible.swift in Sources */,
-				9DEAFFE125925C210037F34D /* PresenterConfigurator.swift in Sources */,
+				9DFBD34326126A4100129E23 /* RootModuleContext.swift in Sources */,
 				9DC93E5125B218E4004990FD /* AlertRoute+UIViewController.swift in Sources */,
-				9DC93E3125B21872004990FD /* Router+SegueSender.swift in Sources */,
 				9DEA002E259292B80037F34D /* LoadingScreenMainRoute.swift in Sources */,
 				9DC93E4925B218E4004990FD /* UITableView+CellDynamicHeight.swift in Sources */,
-				9DC93E3225B21872004990FD /* ViewController.swift in Sources */,
 				9DEAFFF82592802D0037F34D /* Module.swift in Sources */,
 				9DC93E4B25B218E4004990FD /* UITableViewHeaderFooterView+ReusableView.swift in Sources */,
-				9DC93E2325B21835004990FD /* ModulesRepositoryRoutable.swift in Sources */,
-				9DEA002225928F7B0037F34D /* RootModuleRoutable.swift in Sources */,
-				9DEAFFF425927F8C0037F34D /* UIKitRouter.swift in Sources */,
+				9DC93E2325B21835004990FD /* ModulesRepositoryContext.swift in Sources */,
+				9DEAFFF425927F8C0037F34D /* BaseUIKitRouter.swift in Sources */,
 				9DEAFFD7259255DF0037F34D /* Presentable.swift in Sources */,
 				9DC93E5025B218E4004990FD /* AlertRoute.swift in Sources */,
 				9DC93E4C25B218E4004990FD /* UITableViewCell+ReusableView.swift in Sources */,

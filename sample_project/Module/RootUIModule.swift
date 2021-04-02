@@ -7,6 +7,6 @@
 
 import UIKit
 
-protocol RootModule {
+protocol RootUIModule {
     func didRegisterWithRootViewController(_ rootVC: UIViewController) throws
 }

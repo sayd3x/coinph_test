@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension LoadingScreenMainRoute where Self: UIKitRouter<UIViewController> & RootModuleRoutable
+extension LoadingScreenMainRoute where Self: BaseUIKitRouter<UIViewController> & RootModuleContext
 {
     func showMainScreen() throws {
         guard let rootVC = self.viewController, let module = self.rootModule else {

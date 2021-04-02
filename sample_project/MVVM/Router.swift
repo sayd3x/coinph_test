@@ -7,8 +7,9 @@
 
 import Foundation
 
-protocol Router {
+protocol Router {}
+
+protocol UIKitRouter: Router {
     associatedtype ViewController
-    
     var viewController: ViewController? { get }
 }

@@ -8,5 +8,7 @@
 import Foundation
 
 protocol Presentable {
-    func didAttachViewModel()
+    associatedtype ViewModel
+    
+    func attachViewModel(_ viewModel: ViewModel) throws
 }

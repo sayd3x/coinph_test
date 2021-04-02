@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension AlertRoute where Self: Router, Self.ViewController: UIViewController {
+extension AlertRoute where Self: UIKitRouter, Self.ViewController: UIViewController {
     func showAlert(_ title: String, withMessage message: String) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         

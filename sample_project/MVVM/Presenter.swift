@@ -7,13 +7,14 @@
 
 import Foundation
 
-protocol Presenter {
+protocol ViewModelPresenter {
     associatedtype ViewModel
-    associatedtype Router
-
-    var viewModel: ViewModel? { get }
-    var router: Router? { get }
-
-    func didAttachWithRouter(_ router: Router?)
-    func didDetach()
+    func createViewModel() throws -> ViewModel
 }
+
+protocol RoutablePresenter {
+    associatedtype Router
+    func attachRouter(_ router: Router) throws
+}
+
+typealias Presenter = ViewModelPresenter & RoutablePresenter

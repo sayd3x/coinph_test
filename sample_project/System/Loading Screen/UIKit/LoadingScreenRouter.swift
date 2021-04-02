@@ -7,14 +7,13 @@
 
 import UIKit
 
-final class LoadingScreenRouter: UIKitRouter<UIViewController>,
-                           RootModuleRoutable,
-                           LoadingScreenMainRoute
+final class LoadingScreenRouter: BaseUIKitRouter<UIViewController>,
+                                 RootModuleContext,
+                                 LoadingScreenMainRoute
 {
-    var rootModule: (UIModule & RootModule)?
+    var rootModule: (RootUIModule & UIModule)? = nil
     
 }
-
 
 enum LoadingScreenRouterError: Error {
     case invalidRouter
