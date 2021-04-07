@@ -8,5 +8,5 @@
 import Foundation
 
 protocol LoadingScreenMainRoute {
-    func showMainScreen() throws
+    func showMainScreen()
 }

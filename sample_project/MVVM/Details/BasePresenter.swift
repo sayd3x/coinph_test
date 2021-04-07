@@ -13,7 +13,7 @@ enum BasePresenterError: Error {
 
 class ViewModelBasePresenter<ViewModel>: ViewModelPresenter {
     func createViewModel() throws -> ViewModel {
-        throw ViewModelBasePresenterError.noViewModel
+        throw BasePresenterError.shouldCreateViewModel
     }
 }
 

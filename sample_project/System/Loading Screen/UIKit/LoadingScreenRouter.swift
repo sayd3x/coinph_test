@@ -14,7 +14,3 @@ final class LoadingScreenRouter: BaseUIKitRouter<UIViewController>,
     var rootModule: (RootUIModule & UIModule)? = nil
     
 }
-
-enum LoadingScreenRouterError: Error {
-    case invalidRouter
-}

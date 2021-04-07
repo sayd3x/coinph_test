@@ -13,6 +13,9 @@ class LoadingScreenViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        try! router.showMainScreen()
+        // perform a little delay to see loading screed
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2)) { [self] in
+            router.showMainScreen()
+        }
     }
 }

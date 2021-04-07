@@ -9,11 +9,12 @@ import UIKit
 
 extension LoadingScreenMainRoute where Self: BaseUIKitRouter<UIViewController> & RootModuleContext
 {
-    func showMainScreen() throws {
+    func showMainScreen() {
         guard let rootVC = self.viewController, let module = self.rootModule else {
-            throw LoadingScreenRouterError.invalidRouter
+            assertionFailure("Invalid router context")
+            return
         }
         
-        try module.didRegisterWithRootViewController(rootVC)
+        module.registerRootViewController(rootVC)
     }
 }

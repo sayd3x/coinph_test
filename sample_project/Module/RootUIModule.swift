@@ -8,5 +8,5 @@
 import UIKit
 
 protocol RootUIModule {
-    func didRegisterWithRootViewController(_ rootVC: UIViewController) throws
+    func registerRootViewController(_ rootVC: UIViewController)
 }
