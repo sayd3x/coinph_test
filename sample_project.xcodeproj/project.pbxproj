@@ -60,6 +60,7 @@
 		9D2DE4D3262339C60037CAE1 /* AssetsRepository+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2DE4D2262339C60037CAE1 /* AssetsRepository+Rx.swift */; };
 		9D2DE4D726233A7B0037CAE1 /* TransactionsRepository+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2DE4D626233A7B0037CAE1 /* TransactionsRepository+Rx.swift */; };
 		9D2DE4DA26233FB60037CAE1 /* WalletsViewModel+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2DE4D926233FB60037CAE1 /* WalletsViewModel+Rx.swift */; };
+		9D2DE4E3262385570037CAE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2DE4E2262385570037CAE1 /* ViewController.swift */; };
 		9D9BE157261B251A00B1DEB8 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 9D9BE156261B251A00B1DEB8 /* RxCocoa */; };
 		9D9BE159261B251A00B1DEB8 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9D9BE158261B251A00B1DEB8 /* RxSwift */; };
 		9D9BE15B261B251A00B1DEB8 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 9D9BE15A261B251A00B1DEB8 /* RxRelay */; };
@@ -155,6 +156,7 @@
 		9D2DE4D2262339C60037CAE1 /* AssetsRepository+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AssetsRepository+Rx.swift"; sourceTree = "<group>"; };
 		9D2DE4D626233A7B0037CAE1 /* TransactionsRepository+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionsRepository+Rx.swift"; sourceTree = "<group>"; };
 		9D2DE4D926233FB60037CAE1 /* WalletsViewModel+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WalletsViewModel+Rx.swift"; sourceTree = "<group>"; };
+		9D2DE4E2262385570037CAE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9D9BE161261B270E00B1DEB8 /* WalletsRecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsRecordTableViewCell.swift; sourceTree = "<group>"; };
 		9D9BE16B261B2A7200B1DEB8 /* WalletsRecordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsRecordViewModel.swift; sourceTree = "<group>"; };
 		9DC93E2225B21835004990FD /* RepositoryModuleContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryModuleContext.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 				9D2DE3B2261DB9A40037CAE1 /* Layoutable.swift */,
 				9D2DE3B6261DB9BE0037CAE1 /* TableViewCell.swift */,
 				9D2DE3B9261DD0C00037CAE1 /* LayoutableTableViewCell.swift */,
+				9D2DE4E2262385570037CAE1 /* ViewController.swift */,
 			);
 			path = Layoutable;
 			sourceTree = "<group>";
@@ -772,6 +775,7 @@
 				9D2DE3D8261E06080037CAE1 /* WalletsAsset.swift in Sources */,
 				9D2DE49A262101C70037CAE1 /* Driver+ObserverValue.swift in Sources */,
 				9DEAFFF425927F8C0037F34D /* BaseUIKitRouter.swift in Sources */,
+				9D2DE4E3262385570037CAE1 /* ViewController.swift in Sources */,
 				9D2DE4C526221CEC0037CAE1 /* WalletsRecordTransactionDefaultFormatter.swift in Sources */,
 				9D2DE4BE26221A350037CAE1 /* WalletsRecordViewModelSource+WalletsTransaction.swift in Sources */,
 				9D2DE406261E252A0037CAE1 /* BackendError.swift in Sources */,
