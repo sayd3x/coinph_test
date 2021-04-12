@@ -87,10 +87,7 @@
 		9DC93E4D25B218E4004990FD /* NibLoadableView+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC93E4125B218E4004990FD /* NibLoadableView+UIView.swift */; };
 		9DC93E4E25B218E4004990FD /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC93E4225B218E4004990FD /* NibLoadableView.swift */; };
 		9DC93E4F25B218E4004990FD /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC93E4325B218E4004990FD /* ReusableView.swift */; };
-		9DC93E5025B218E4004990FD /* AlertRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC93E4525B218E4004990FD /* AlertRoute.swift */; };
-		9DC93E5125B218E4004990FD /* AlertRoute+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC93E4725B218E4004990FD /* AlertRoute+UIViewController.swift */; };
 		9DD58D3C260E59120085FA3B /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD58D3B260E59120085FA3B /* Cancellable.swift */; };
-		9DD58D42260E846A0085FA3B /* PresentableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD58D41260E846A0085FA3B /* PresentableViewController.swift */; };
 		9DE6C905261B2FF800792FC5 /* WalletsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE6C904261B2FF800792FC5 /* WalletsViewModel.swift */; };
 		9DE6C90B261B31D600792FC5 /* WalletsErrorRecordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE6C90A261B31D600792FC5 /* WalletsErrorRecordViewModel.swift */; };
 		9DE6C90E261B340600792FC5 /* WalletsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE6C90D261B340600792FC5 /* WalletsItem.swift */; };
@@ -193,10 +190,7 @@
 		9DC93E4125B218E4004990FD /* NibLoadableView+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NibLoadableView+UIView.swift"; sourceTree = "<group>"; };
 		9DC93E4225B218E4004990FD /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
 		9DC93E4325B218E4004990FD /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
-		9DC93E4525B218E4004990FD /* AlertRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertRoute.swift; sourceTree = "<group>"; };
-		9DC93E4725B218E4004990FD /* AlertRoute+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AlertRoute+UIViewController.swift"; sourceTree = "<group>"; };
 		9DD58D3B260E59120085FA3B /* Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
-		9DD58D41260E846A0085FA3B /* PresentableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentableViewController.swift; sourceTree = "<group>"; };
 		9DE6C904261B2FF800792FC5 /* WalletsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsViewModel.swift; sourceTree = "<group>"; };
 		9DE6C90A261B31D600792FC5 /* WalletsErrorRecordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsErrorRecordViewModel.swift; sourceTree = "<group>"; };
 		9DE6C90D261B340600792FC5 /* WalletsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsItem.swift; sourceTree = "<group>"; };
@@ -443,7 +437,6 @@
 			children = (
 				9D2DE3B1261DB9980037CAE1 /* Layoutable */,
 				9DC93E3A25B218E4004990FD /* Dynamic TableView */,
-				9DC93E4425B218E4004990FD /* MVVM */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -467,24 +460,6 @@
 				9DC93E3F25B218E4004990FD /* UITableViewHeaderFooterView+ReusableView.swift */,
 				9DC93E4025B218E4004990FD /* UITableViewCell+ReusableView.swift */,
 				9DC93E4125B218E4004990FD /* NibLoadableView+UIView.swift */,
-			);
-			path = UIKit;
-			sourceTree = "<group>";
-		};
-		9DC93E4425B218E4004990FD /* MVVM */ = {
-			isa = PBXGroup;
-			children = (
-				9DC93E4625B218E4004990FD /* UIKit */,
-				9DC93E4525B218E4004990FD /* AlertRoute.swift */,
-			);
-			path = MVVM;
-			sourceTree = "<group>";
-		};
-		9DC93E4625B218E4004990FD /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
-				9DC93E4725B218E4004990FD /* AlertRoute+UIViewController.swift */,
-				9DD58D41260E846A0085FA3B /* PresentableViewController.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -781,7 +756,6 @@
 				9DEA001F25928D640037F34D /* LoadingScreenViewController.swift in Sources */,
 				9D2DE4FD26244A1A0037CAE1 /* TransactionsDefaultRepository.swift in Sources */,
 				9D2DE4B3262219880037CAE1 /* WalletsRecordTransactionFormatter.swift in Sources */,
-				9DD58D42260E846A0085FA3B /* PresentableViewController.swift in Sources */,
 				9D2DE3CB261DD6C60037CAE1 /* WalletsRecordTableViewCell+Presentable.swift in Sources */,
 				9D2DE434261E5D6B0037CAE1 /* Transaction.swift in Sources */,
 				9DEAFFF12592777B0037F34D /* Router.swift in Sources */,
@@ -810,7 +784,6 @@
 				9D2DE46426205FBE0037CAE1 /* Observable+ObserverEvent.swift in Sources */,
 				9D2DE3B7261DB9BE0037CAE1 /* TableViewCell.swift in Sources */,
 				9DFBD34326126A4100129E23 /* RootModuleContext.swift in Sources */,
-				9DC93E5125B218E4004990FD /* AlertRoute+UIViewController.swift in Sources */,
 				9D2DE4A42621AAA80037CAE1 /* WalletsRecordViewModelSource.swift in Sources */,
 				9D2DE4772620D7880037CAE1 /* WalletsAsset+Asset.swift in Sources */,
 				9DE6C90E261B340600792FC5 /* WalletsItem.swift in Sources */,
@@ -837,7 +810,6 @@
 				9D2DE406261E252A0037CAE1 /* BackendError.swift in Sources */,
 				9D2DE42A261E59370037CAE1 /* TransactionsRepository.swift in Sources */,
 				9DEAFFD7259255DF0037F34D /* Presentable.swift in Sources */,
-				9DC93E5025B218E4004990FD /* AlertRoute.swift in Sources */,
 				9D2DE4FA2624495E0037CAE1 /* NetworkApiError.swift in Sources */,
 				9D2DE4BB26221A1D0037CAE1 /* WalletsRecordViewModelSource+WalletsAsset.swift in Sources */,
 				9D2DE4F4262441340037CAE1 /* BackendNetworkApi.swift in Sources */,
