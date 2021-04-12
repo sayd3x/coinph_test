@@ -39,3 +39,13 @@ extension UITableView {
 
     }
 }
+
+extension UITableView {
+    func register<T: UITableViewCell>(_ classType: T.Type) {
+        register(classType, forCellReuseIdentifier: T.reusableId)
+    }
+    
+    func register<T: UITableViewHeaderFooterView>(_ classType: T.Type) {
+        register(classType, forHeaderFooterViewReuseIdentifier: T.reusableId)
+    }
+}

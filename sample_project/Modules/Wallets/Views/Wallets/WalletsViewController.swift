@@ -11,14 +11,17 @@ import RxCocoa
 
 class WalletsViewController: LayoutableViewController {
     internal var viewModel: WalletsViewModel!
+    internal var disposeBag = DisposeBag()
     
     lazy var assetButton: UIButton = {
-        let button = UIButton()
+        let button = UIButton(type: .roundedRect)
+        button.setTitle("My Wallets", for: .normal)
         return button
     }()
     
     lazy var transactionsButton: UIButton = {
-        let button = UIButton()
+        let button = UIButton(type: .roundedRect)
+        button.setTitle("History", for: .normal)
         return button
     }()
 
@@ -29,56 +32,43 @@ class WalletsViewController: LayoutableViewController {
         return stackView
     }()
     
+    lazy var pageScroller: UIScrollView = {
+        let scrollView = UIScrollView()
+        scrollView.isPagingEnabled = true
+        
+        let scrollContent = UIStackView(arrangedSubviews: [assetsTableView, transactionsTableView])
+        scrollContent.translatesAutoresizingMaskIntoConstraints = false
+        scrollView.addSubview(scrollContent)
+        NSLayoutConstraint.activate([
+            assetsTableView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
+            transactionsTableView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
+            scrollContent.heightAnchor.constraint(equalTo: scrollView.heightAnchor),
+        ])
+
+        return scrollView
+    }()
+    
     lazy var assetsTableView: UITableView = {
         let tableView = UITableView()
+        tableView.layoutMargins.left = 24
+        tableView.layoutMargins.right = 24
+        tableView.backgroundColor = .green
+        
+        tableView.register(WalletsRecordTableViewCell.self)
+        tableView.register(WalletsErrorRecordTableViewCell.self)
+
         return tableView
     }()
 
     lazy var transactionsTableView: UITableView = {
         let tableView = UITableView()
+        tableView.layoutMargins.left = 24
+        tableView.layoutMargins.right = 24
+        tableView.backgroundColor = .orange
+
+        tableView.register(WalletsRecordTableViewCell.self)
+        tableView.register(WalletsErrorRecordTableViewCell.self)
+
         return tableView
     }()
-
-    lazy var pageScroller: UIScrollView = {
-        let scrollView = UIScrollView()
-        scrollView.isPagingEnabled = true
-        scrollView.isDirectionalLockEnabled = true
-        
-        let scrollContent = UIStackView(arrangedSubviews: [assetsTableView, transactionsTableView])
-        scrollView.addSubview(scrollContent)
-        NSLayoutConstraint.activate([
-            assetsTableView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
-            transactionsTableView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
-            scrollContent.topAnchor.constraint(equalTo: scrollView.topAnchor),
-            scrollContent.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
-            scrollContent.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor)
-        ])
-
-        return scrollView
-    }()
-
-}
-
-extension WalletsViewController: Layoutable {
-    var layoutableSubviews: [UIView] {
-        return [topStackView, pageScroller]
-    }
-    
-    var layoutableConstraints: [NSLayoutConstraint] {
-        return [
-            topStackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            topStackView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
-            topStackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
-            pageScroller.topAnchor.constraint(equalTo: topStackView.bottomAnchor),
-            pageScroller.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            pageScroller.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            pageScroller.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-        ]
-    }
-}
-
-extension WalletsViewController: Presentable {
-    func attachViewModel(_ viewModel: WalletsViewModel) throws {
-        self.viewModel = viewModel
-    }
 }
