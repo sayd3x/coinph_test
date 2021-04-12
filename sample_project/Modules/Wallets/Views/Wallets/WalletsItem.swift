@@ -12,6 +12,7 @@ enum WalletsItem {
     case transaction(_ id: String, _ model: WalletsRecordViewModel)
     case error(_ model: WalletsErrorRecordViewModel)
     case loading
+    case fetchTrigger
 }
 
 extension WalletsItem {

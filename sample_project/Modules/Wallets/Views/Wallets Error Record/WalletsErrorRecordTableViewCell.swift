@@ -10,11 +10,15 @@ import UIKit
 class WalletsErrorRecordTableViewCell: LayoutableTableViewCell {
     lazy var titleLabel: UILabel = {
         let label = UILabel()
+        label.font = .preferredFont(forTextStyle: .body)
+        label.textAlignment = .center
         return label
     }()
     
     lazy var descriptionLabel: UILabel = {
         let label = UILabel()
+        label.font = .preferredFont(forTextStyle: .footnote)
+        label.textAlignment = .center
         return label
     }()
 
@@ -26,6 +30,7 @@ class WalletsErrorRecordTableViewCell: LayoutableTableViewCell {
         return stackView
     }()
     
+    
     internal var stackViewConstraints: [NSLayoutConstraint] {
         return [
             stackView.topAnchor.constraint(equalTo: contentView.layoutMarginsGuide.topAnchor),
@@ -35,3 +40,4 @@ class WalletsErrorRecordTableViewCell: LayoutableTableViewCell {
         ]
     }
 }
+

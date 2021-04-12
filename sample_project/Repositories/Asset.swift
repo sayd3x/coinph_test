@@ -10,7 +10,7 @@ import Foundation
 struct Asset: Decodable, BackendData {
     var id: String
     var name: String?
-    var balance: Decimal?
+    var balance: String?
     
     enum CodingKeys: String, CodingKey {
         case id,balance

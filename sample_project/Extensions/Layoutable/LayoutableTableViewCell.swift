@@ -15,7 +15,7 @@ class LayoutableTableViewCell: TableViewCell {
         if let layoutable = self as? Layoutable {
             layoutable.layoutableSubviews.forEach{
                 $0.translatesAutoresizingMaskIntoConstraints = false
-                self.addSubview($0)
+                self.contentView.addSubview($0)
             }
             
             NSLayoutConstraint.activate(layoutable.layoutableConstraints)

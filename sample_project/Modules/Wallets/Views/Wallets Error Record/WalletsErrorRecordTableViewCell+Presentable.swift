@@ -11,5 +11,6 @@ extension WalletsErrorRecordTableViewCell: Presentable {
     func attachViewModel(_ viewModel: WalletsErrorRecordViewModel) throws {
         titleLabel.text = viewModel.title
         descriptionLabel.text = viewModel.description
+        setNeedsLayout()
     }
 }

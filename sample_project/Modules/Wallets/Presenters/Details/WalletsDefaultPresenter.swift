@@ -25,7 +25,7 @@ extension WalletsDefaultPresenter: ViewModelPresenter {
         
         Observable.combineLatest(assetItems, masterSource.assetsLastItem)
             .map{ assetItems, assetLastItem in
-                assetItems + (assetLastItem.map{ [$0] } ?? [])
+                assetItems + (assetLastItem.map{ [$0] } ?? [.fetchTrigger])
             }
             .bind(to: masterSource.assets)
             .disposed(by: disposeBag)
@@ -64,7 +64,7 @@ extension WalletsDefaultPresenter: ViewModelPresenter {
         
         Observable.combineLatest(transactionItems, masterSource.transactionsLastItem)
             .map{ transactionItems, transactionsLastItem in
-                transactionItems + (transactionsLastItem.map{ [$0] } ?? [])
+                transactionItems + (transactionsLastItem.map{ [$0] } ?? [.fetchTrigger])
             }
             .bind(to: masterSource.transactions)
             .disposed(by: disposeBag)

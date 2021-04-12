@@ -71,6 +71,8 @@
 		9D2DE4FD26244A1A0037CAE1 /* TransactionsDefaultRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2DE4FC26244A1A0037CAE1 /* TransactionsDefaultRepository.swift */; };
 		9D2DE50626244C6D0037CAE1 /* RepositoriesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2DE50526244C6D0037CAE1 /* RepositoriesFactory.swift */; };
 		9D2DE50926244CB50037CAE1 /* MockedRepositoriesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2DE50826244CB50037CAE1 /* MockedRepositoriesFactory.swift */; };
+		9D2DE50C26245F890037CAE1 /* UITableView+CellDynamicHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC93E3D25B218E4004990FD /* UITableView+CellDynamicHeight.swift */; };
+		9D2DE51026246C190037CAE1 /* WalletsLoadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2DE50F26246C190037CAE1 /* WalletsLoadingTableViewCell.swift */; };
 		9D9BE157261B251A00B1DEB8 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 9D9BE156261B251A00B1DEB8 /* RxCocoa */; };
 		9D9BE159261B251A00B1DEB8 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9D9BE158261B251A00B1DEB8 /* RxSwift */; };
 		9D9BE15B261B251A00B1DEB8 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 9D9BE15A261B251A00B1DEB8 /* RxRelay */; };
@@ -177,6 +179,7 @@
 		9D2DE4FC26244A1A0037CAE1 /* TransactionsDefaultRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsDefaultRepository.swift; sourceTree = "<group>"; };
 		9D2DE50526244C6D0037CAE1 /* RepositoriesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesFactory.swift; sourceTree = "<group>"; };
 		9D2DE50826244CB50037CAE1 /* MockedRepositoriesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedRepositoriesFactory.swift; sourceTree = "<group>"; };
+		9D2DE50F26246C190037CAE1 /* WalletsLoadingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsLoadingTableViewCell.swift; sourceTree = "<group>"; };
 		9D9BE161261B270E00B1DEB8 /* WalletsRecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsRecordTableViewCell.swift; sourceTree = "<group>"; };
 		9D9BE16B261B2A7200B1DEB8 /* WalletsRecordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsRecordViewModel.swift; sourceTree = "<group>"; };
 		9DC93E2225B21835004990FD /* RepositoryModuleContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryModuleContext.swift; sourceTree = "<group>"; };
@@ -388,6 +391,14 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		9D2DE50E26246BEC0037CAE1 /* Wallets Loading */ = {
+			isa = PBXGroup;
+			children = (
+				9D2DE50F26246C190037CAE1 /* WalletsLoadingTableViewCell.swift */,
+			);
+			path = "Wallets Loading";
+			sourceTree = "<group>";
+		};
 		9D9BE15D261B25AD00B1DEB8 /* Wallets */ = {
 			isa = PBXGroup;
 			children = (
@@ -402,6 +413,7 @@
 		9D9BE15F261B264500B1DEB8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9D2DE50E26246BEC0037CAE1 /* Wallets Loading */,
 				9D9BE171261B2B3300B1DEB8 /* Wallets Error Record */,
 				9D9BE160261B265000B1DEB8 /* Wallets Record */,
 				9DE6C903261B2FD900792FC5 /* Wallets */,
@@ -756,6 +768,7 @@
 				9D2DE3BA261DD0C00037CAE1 /* LayoutableTableViewCell.swift in Sources */,
 				9D2DE49D262106710037CAE1 /* WalletsEvent.swift in Sources */,
 				9D9BE16C261B2A7200B1DEB8 /* WalletsRecordViewModel.swift in Sources */,
+				9D2DE51026246C190037CAE1 /* WalletsLoadingTableViewCell.swift in Sources */,
 				9D2DE47A2620D7F60037CAE1 /* WalletsTransaction+Transaction.swift in Sources */,
 				9DEA000E259283480037F34D /* DefaultRepositoryModule.swift in Sources */,
 				9D2DE4CA26223DA30037CAE1 /* WalletsInteractorError+LocalizedError.swift in Sources */,
@@ -783,6 +796,7 @@
 				9D2DE3C5261DD68C0037CAE1 /* WalletsErrorRecordTableViewCell+Presentable.swift in Sources */,
 				9DEAFF9B25923D540037F34D /* Presenter.swift in Sources */,
 				9DEA0006259282860037F34D /* ModulesRepository.swift in Sources */,
+				9D2DE50C26245F890037CAE1 /* UITableView+CellDynamicHeight.swift in Sources */,
 				9D2DE3DB261E06780037CAE1 /* WalletsTransaction.swift in Sources */,
 				9D2DE4B02622197B0037CAE1 /* WalletsRecordAssetFormatter.swift in Sources */,
 				9DEA0033259293F50037F34D /* LoadingScreenMainRoute+RootModuleRoutable.swift in Sources */,

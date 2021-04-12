@@ -31,6 +31,11 @@ extension WalletsViewController: Presentable {
                     try! cell.attachViewModel(model)
                     return cell
                 case .loading:
+                    let cell = tableView.dequeueReusableCell(WalletsLoadingTableViewCell.self,
+                                                  forIndexPath: IndexPath(row: row, section: 0))
+                    cell.showProgress()
+                    return cell
+                case .fetchTrigger:
                     return UITableViewCell()
                 }
             }
@@ -65,6 +70,11 @@ extension WalletsViewController: Presentable {
                     try! cell.attachViewModel(model)
                     return cell
                 case .loading:
+                    let cell = tableView.dequeueReusableCell(WalletsLoadingTableViewCell.self,
+                                                  forIndexPath: IndexPath(row: row, section: 0))
+                    cell.showProgress()
+                    return cell
+                case .fetchTrigger:
                     return UITableViewCell()
                 }
             }
@@ -74,7 +84,7 @@ extension WalletsViewController: Presentable {
                    transactionsTableView.rx.modelSelected(WalletsItem.self).asDriver())
             .drive(onNext: { [unowned self] index, item in
                 transactionsTableView.deselectRow(at: index, animated: false)
-                viewModel.onEvent(.selectedAssetItem(item))
+                viewModel.onEvent(.selectedTransactionItem(item))
             })
             .disposed(by: disposeBag)
     }

@@ -11,6 +11,6 @@ extension WalletsAsset {
     init(_ asset: Asset) {
         self.init(id: asset.id,
                   name: asset.name,
-                  balance: asset.balance)
+                  balance: asset.balance.map{Decimal(string: $0)} ?? nil)
     }
 }

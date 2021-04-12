@@ -11,9 +11,9 @@ extension UITableView {
 
     func heightOf<T>(_ cellType: T.Type,
                          forModel model: T.ViewModel
-    ) -> CGFloat where T: UITableViewCell & Presentable & PresenterCompatible, T.Router == NoRouter {
+    ) -> CGFloat where T: UITableViewCell & Presentable {
         let cell = dequeueReusableCell(withIdentifier: T.reusableId) as! T
-        cell.attachViewModel(model)
+        try? cell.attachViewModel(model)
         cell.layoutIfNeeded()
 
         var size = UIView.layoutFittingCompressedSize
@@ -23,9 +23,9 @@ extension UITableView {
 
     func heightOf<T>(_ cellType: T.Type,
                          forModel model: T.ViewModel
-    ) -> CGFloat where T: UITableViewHeaderFooterView & Presentable & PresenterCompatible, T.Router == NoRouter {
+    ) -> CGFloat where T: UITableViewHeaderFooterView & Presentable {
         let cell = dequeueReusableHeaderFooterView(withIdentifier: T.reusableId) as! T
-        cell.attachViewModel(model)
+        try? cell.attachViewModel(model)
         cell.layoutIfNeeded()
 
         var size = UIView.layoutFittingCompressedSize
