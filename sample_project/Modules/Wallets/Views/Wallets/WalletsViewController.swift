@@ -14,17 +14,24 @@ class WalletsViewController: LayoutableViewController {
     internal var disposeBag = DisposeBag()
     
     lazy var assetButton: UIButton = {
-        let button = UIButton(type: .roundedRect)
+        let button = UIButton(type: .custom)
         button.setTitle("My Wallets", for: .normal)
+        button.addTarget(self, action: #selector(tappedAssetsButton(_:)), for: .touchUpInside)
+        button.backgroundColor = .systemGray
         return button
     }()
     
     lazy var transactionsButton: UIButton = {
-        let button = UIButton(type: .roundedRect)
+        let button = UIButton(type: .custom)
         button.setTitle("History", for: .normal)
+        button.addTarget(self, action: #selector(tappedTransactionsButton(_:)), for: .touchUpInside)
         return button
     }()
-
+    
+    private var pageButtons: [UIButton] {
+        [assetButton, transactionsButton]
+    }
+    
     lazy var topStackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [assetButton, transactionsButton])
         stackView.axis = .horizontal
@@ -35,6 +42,7 @@ class WalletsViewController: LayoutableViewController {
     lazy var pageScroller: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.isPagingEnabled = true
+        scrollView.delegate = self
         
         let scrollContent = UIStackView(arrangedSubviews: [assetsTableView, transactionsTableView])
         scrollContent.translatesAutoresizingMaskIntoConstraints = false
@@ -56,7 +64,7 @@ class WalletsViewController: LayoutableViewController {
         tableView.delegate = self
         tableView.layoutMargins.left = 24
         tableView.layoutMargins.right = 24
-        tableView.backgroundColor = .green
+        tableView.separatorInset = .zero
         
         tableView.register(WalletsRecordTableViewCell.self)
         tableView.register(WalletsErrorRecordTableViewCell.self)
@@ -71,7 +79,7 @@ class WalletsViewController: LayoutableViewController {
         tableView.estimatedRowHeight = 0
         tableView.layoutMargins.left = 24
         tableView.layoutMargins.right = 24
-        tableView.backgroundColor = .orange
+        tableView.separatorInset = .zero
 
         tableView.register(WalletsRecordTableViewCell.self)
         tableView.register(WalletsErrorRecordTableViewCell.self)
@@ -79,6 +87,37 @@ class WalletsViewController: LayoutableViewController {
 
         return tableView
     }()
+    
+    private func activateTabWithPage(_ pageIndex: Int) {
+        guard pageButtons.count > pageIndex else {
+            return
+        }
+        
+        pageButtons.forEach{
+            $0.backgroundColor = nil
+        }
+        
+        let currentPage = pageButtons[pageIndex]
+        currentPage.backgroundColor = .systemGray
+    }
+    
+    @objc func tappedAssetsButton(_ sender: Any) {
+        pageScroller.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
+        activateTabWithPage(0)
+    }
+    
+    @objc func tappedTransactionsButton(_ sender: Any) {
+        pageScroller.setContentOffset(CGPoint(x: pageScroller.frame.width, y: 0), animated: true)
+        activateTabWithPage(1)
+    }
+}
+
+extension WalletsViewController: UIScrollViewDelegate {
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let pageIndex = Int(scrollView.contentOffset.x / scrollView.frame.width)
+        
+        activateTabWithPage(pageIndex)
+    }
 }
 
 extension WalletsViewController: UITableViewDelegate {
@@ -116,7 +155,11 @@ extension WalletsViewController: UITableViewDelegate {
         }
     }
 
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return UIView()
+    }
+    
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 0
+        return 1
     }
 }
