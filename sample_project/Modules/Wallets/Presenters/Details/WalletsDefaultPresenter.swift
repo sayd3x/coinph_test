@@ -50,6 +50,7 @@ extension WalletsDefaultPresenter: ViewModelPresenter {
         masterSource.event
             .filter{ $0.selectedAssetItem?.isErrorItem ?? false }
             .map{ _ in WalletsEvent.bare(.fetchMoreAssets) }
+            .observeOn(MainScheduler.asyncInstance)
             .bind(to: masterSource.event)
             .disposed(by: disposeBag)
     }
@@ -89,6 +90,7 @@ extension WalletsDefaultPresenter: ViewModelPresenter {
         masterSource.event
             .filter{ $0.selectedTransactionItem?.isErrorItem ?? false }
             .map{ _ in WalletsEvent.bare(.fetchMoreTransactions) }
+            .observeOn(MainScheduler.asyncInstance)
             .bind(to: masterSource.event)
             .disposed(by: disposeBag)
     }

@@ -386,13 +386,6 @@
 			path = Details;
 			sourceTree = "<group>";
 		};
-		9D2DE4FF26244B8C0037CAE1 /* App */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = App;
-			sourceTree = "<group>";
-		};
 		9D2DE50E26246BEC0037CAE1 /* Wallets Loading */ = {
 			isa = PBXGroup;
 			children = (
@@ -623,7 +616,6 @@
 		9DEAFF8225923CEB0037F34D /* sample_project */ = {
 			isa = PBXGroup;
 			children = (
-				9D2DE4FF26244B8C0037CAE1 /* App */,
 				9D2DE424261E58ED0037CAE1 /* Repositories */,
 				9D2DE3ED261E0C8A0037CAE1 /* Network API */,
 				9DEAFF9925923D340037F34D /* MVVM */,

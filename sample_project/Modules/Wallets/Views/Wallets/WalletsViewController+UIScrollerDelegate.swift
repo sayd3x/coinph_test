@@ -9,6 +9,7 @@ import UIKit
 
 extension WalletsViewController: UIScrollViewDelegate {
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        guard scrollView === pageScroller else { return }
         let pageIndex = Int(scrollView.contentOffset.x / scrollView.frame.width)
         
         activateTabWithPage(pageIndex)
