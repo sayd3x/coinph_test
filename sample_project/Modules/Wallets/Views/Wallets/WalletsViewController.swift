@@ -16,6 +16,7 @@ class WalletsViewController: LayoutableViewController {
     lazy var assetButton: UIButton = {
         let button = UIButton(type: .custom)
         button.setTitle("My Wallets", for: .normal)
+        button.setTitleColor(.label, for: .normal)
         button.addTarget(self, action: #selector(tappedAssetsButton(_:)), for: .touchUpInside)
         button.backgroundColor = .systemGray
         return button
@@ -24,11 +25,12 @@ class WalletsViewController: LayoutableViewController {
     lazy var transactionsButton: UIButton = {
         let button = UIButton(type: .custom)
         button.setTitle("History", for: .normal)
+        button.setTitleColor(.label, for: .normal)
         button.addTarget(self, action: #selector(tappedTransactionsButton(_:)), for: .touchUpInside)
         return button
     }()
     
-    private var pageButtons: [UIButton] {
+    internal var pageButtons: [UIButton] {
         [assetButton, transactionsButton]
     }
     
@@ -88,7 +90,7 @@ class WalletsViewController: LayoutableViewController {
         return tableView
     }()
     
-    private func activateTabWithPage(_ pageIndex: Int) {
+    internal func activateTabWithPage(_ pageIndex: Int) {
         guard pageButtons.count > pageIndex else {
             return
         }
@@ -110,13 +112,10 @@ class WalletsViewController: LayoutableViewController {
         pageScroller.setContentOffset(CGPoint(x: pageScroller.frame.width, y: 0), animated: true)
         activateTabWithPage(1)
     }
-}
-
-extension WalletsViewController: UIScrollViewDelegate {
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        let pageIndex = Int(scrollView.contentOffset.x / scrollView.frame.width)
-        
-        activateTabWithPage(pageIndex)
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .systemBackground
     }
 }
 

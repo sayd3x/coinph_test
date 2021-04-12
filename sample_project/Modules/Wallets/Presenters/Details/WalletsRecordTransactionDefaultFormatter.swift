@@ -19,7 +19,7 @@ struct WalletsRecordTransactionDefaultFormatter: WalletsRecordTransactionFormatt
         case .incoming:
             return String(format: "%@'ve received payment", recipient)
         case .outgoing:
-            return String(format: "%@'ve cashed out to %@", recipient, sender)
+            return String(format: "%@'ve cashed out to %@", sender, recipient)
         }
     }
     
@@ -29,6 +29,7 @@ struct WalletsRecordTransactionDefaultFormatter: WalletsRecordTransactionFormatt
         if let amount = transaction.amount {
             let formatter = NumberFormatter()
             formatter.numberStyle = .currency
+            formatter.roundingMode = .ceiling
             formatter.currencySymbol = ""
             
             formattedString += formatter.string(for: amount as NSDecimalNumber) ?? ""

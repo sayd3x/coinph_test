@@ -73,6 +73,7 @@
 		9D2DE50926244CB50037CAE1 /* MockedRepositoriesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2DE50826244CB50037CAE1 /* MockedRepositoriesFactory.swift */; };
 		9D2DE50C26245F890037CAE1 /* UITableView+CellDynamicHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC93E3D25B218E4004990FD /* UITableView+CellDynamicHeight.swift */; };
 		9D2DE51026246C190037CAE1 /* WalletsLoadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2DE50F26246C190037CAE1 /* WalletsLoadingTableViewCell.swift */; };
+		9D2DE51726247BFE0037CAE1 /* WalletsViewController+UIScrollerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2DE51626247BFE0037CAE1 /* WalletsViewController+UIScrollerDelegate.swift */; };
 		9D9BE157261B251A00B1DEB8 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 9D9BE156261B251A00B1DEB8 /* RxCocoa */; };
 		9D9BE159261B251A00B1DEB8 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9D9BE158261B251A00B1DEB8 /* RxSwift */; };
 		9D9BE15B261B251A00B1DEB8 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 9D9BE15A261B251A00B1DEB8 /* RxRelay */; };
@@ -180,6 +181,7 @@
 		9D2DE50526244C6D0037CAE1 /* RepositoriesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesFactory.swift; sourceTree = "<group>"; };
 		9D2DE50826244CB50037CAE1 /* MockedRepositoriesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedRepositoriesFactory.swift; sourceTree = "<group>"; };
 		9D2DE50F26246C190037CAE1 /* WalletsLoadingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsLoadingTableViewCell.swift; sourceTree = "<group>"; };
+		9D2DE51626247BFE0037CAE1 /* WalletsViewController+UIScrollerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WalletsViewController+UIScrollerDelegate.swift"; sourceTree = "<group>"; };
 		9D9BE161261B270E00B1DEB8 /* WalletsRecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsRecordTableViewCell.swift; sourceTree = "<group>"; };
 		9D9BE16B261B2A7200B1DEB8 /* WalletsRecordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsRecordViewModel.swift; sourceTree = "<group>"; };
 		9DC93E2225B21835004990FD /* RepositoryModuleContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryModuleContext.swift; sourceTree = "<group>"; };
@@ -507,6 +509,7 @@
 			children = (
 				9D2DE3CD261DD7F80037CAE1 /* WalletsViewController.swift */,
 				9D2DE4EB262432470037CAE1 /* WalletsViewController+Layoutable.swift */,
+				9D2DE51626247BFE0037CAE1 /* WalletsViewController+UIScrollerDelegate.swift */,
 				9D2DE4EE262432880037CAE1 /* WalletsViewController+Presentable.swift */,
 				9DE6C90D261B340600792FC5 /* WalletsItem.swift */,
 				9D2DE49C262106710037CAE1 /* WalletsEvent.swift */,
@@ -805,6 +808,7 @@
 				9D2DE4912620FC5E0037CAE1 /* WalletsPresenter.swift in Sources */,
 				9D2DE46C2620D1570037CAE1 /* Completable+Observer.swift in Sources */,
 				9D2DE4942620FCC60037CAE1 /* WalletsDefaultPresenter.swift in Sources */,
+				9D2DE51726247BFE0037CAE1 /* WalletsViewController+UIScrollerDelegate.swift in Sources */,
 				9D2DE4D3262339C60037CAE1 /* AssetsRepository+Rx.swift in Sources */,
 				9D2DE4EC262432470037CAE1 /* WalletsViewController+Layoutable.swift in Sources */,
 				9D2DE3C2261DD6730037CAE1 /* WalletsErrorRecordTableViewCell+Layoutable.swift in Sources */,

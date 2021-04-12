@@ -12,6 +12,7 @@ extension WalletsTransaction {
         self.init(id: transaction.id,
                   direction: transaction.entry.map{ WalletsTransactionDirection(rawValue: $0) } ?? nil,
                   currency: transaction.currency,
+                  amount: transaction.amount.map{ Decimal(string: $0) } ?? nil,
                   sender: transaction.sender,
                   recipient: transaction.recipient)
     }

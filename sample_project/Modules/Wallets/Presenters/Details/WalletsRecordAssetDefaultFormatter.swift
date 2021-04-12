@@ -15,6 +15,7 @@ struct WalletsRecordAssetDefaultFormatter: WalletsRecordAssetFormatter {
     func assetBalance(_ asset: WalletsAsset) -> String {
         let formatter = NumberFormatter()
         formatter.numberStyle = .decimal
+        formatter.roundingMode = .ceiling
         return asset.balance.map{ formatter.string(for: $0 as NSDecimalNumber) ?? "" } ?? ""
     }
 }
